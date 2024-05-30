@@ -1,0 +1,211 @@
+.product-section {
+    padding: 20px;
+  }
+  
+  .product-section h1, .product-section h2 {
+    text-align: center;
+  }
+  
+  .calendar-clock {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 30px;
+  }
+  
+  .calendar, .clock {
+    display: flex;
+    align-items: center;
+  }
+  
+  .calendar p, .clock p {
+    margin-left: 5px;
+  }
+  
+  .options {
+    margin-bottom: 20px;
+  }
+  
+  .option-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .option-buttons button {
+    background-color: #fff;
+    border: 1px solid orange;
+    padding: 8px 12px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: orange;
+  }
+  
+  .option-buttons button:hover {
+    background-color: #f0f0f0;
+  }
+  
+  /* Popular Dishes */
+  .popular-heading {
+    margin-bottom: 10px;
+  }
+  
+  .popular-dishes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .popular-dish {
+    position: relative;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 5px;
+  }
+  
+  .popular-dish img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 3px solid orange;
+  }
+  
+  .popular-dish .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 8px 0;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+  }
+  
+  /* Recommended Dishes */
+  .recommended-heading {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .recommended-dishes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .recommended-dish {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+  }
+  
+  .recommended-info {
+    flex: 1;
+    padding-right: 10px;
+  }
+  
+  .recommended-info .dish-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .recommended-info .rating-icons {
+    display: flex;
+    align-items: center;
+  }
+  
+  .recommended-info .rating-icons .veg-icon {
+    margin-left: 10px;
+    color: green;
+  }
+  
+  .recommended-info .refrigerator-icons {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+  }
+  
+  .ingredients-button {
+    background-color: orange;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  
+  .description {
+    margin-top: 5px;
+  }
+  
+  .recommended-img img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
+  /* Select Button */
+  .select {
+    padding: 15px;
+    border: 1px solid black;
+    background-color: black;
+    color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    display: block;
+    max-width: 200px;
+  }
+  
+  .select:hover {
+    background-color: #215678;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .calendar-clock {
+      flex-direction: row;
+      gap: 10px;
+    }
+  
+    .option-buttons {
+      flex-wrap: wrap;
+      gap: 5px;
+    }
+  
+    .popular-dishes, .recommended-dishes {
+        display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+  
+    .recommended-dish {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .recommended-info {
+      padding-right: 0;
+    }
+  
+    .recommended-img img {
+      margin-top: 10px;
+    }
+  }
+  
